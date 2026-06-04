@@ -12,7 +12,5 @@ app = FastAPI(title=settings.APP_NAME)
 async def health() -> dict[str, str]:
     return {"status": "ok"}
 
-
 app.include_router(auth_router, tags=["auth"])
 app.include_router(webhook_router, tags=["webhooks"])
-app.include_router(analytics_router, tags=["analytics"])

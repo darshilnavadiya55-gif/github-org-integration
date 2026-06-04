@@ -28,13 +28,13 @@ A production-minded starter backend for ingesting GitHub organization events and
    ```bash
    uvicorn main:app --reload
    ```
+## npx localtunnel --port 8000
 
 ## Key Routes
 - `GET /health`
 - `GET /auth/github/login`
 - `GET /auth/github/callback`
 - `POST /webhooks/github`
-- `GET /analytics/org/{org_name}/overview`
 
 ## Notes
 - For local webhook testing, use ngrok and set GitHub webhook target to your public URL.

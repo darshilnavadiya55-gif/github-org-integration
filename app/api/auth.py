@@ -60,6 +60,7 @@ async def github_callback(
             }
         },
         upsert=True,
+    )
     
 
     return {"message": "GitHub authorization successful", "login": user.get("login", "unknown")}
